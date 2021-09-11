@@ -1,0 +1,26 @@
+* { 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+  display: flex;
+  justify-content: center;
+  color: #F07C4E;
+}
+main > p {
+  text-align: right;
+}
+
+main > h2 {
+  color: #3C8105;
+}
+
+main > ul {
+  list-style-type: none;
+  border: 3px solid black;
+}
+
+#underline {
+  text-decoration: underline;
+  font-style: italic;
+}

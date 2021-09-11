@@ -1,0 +1,17 @@
+a:link {
+  color: hotpink;
+}
+
+a:visited {
+  color: salmon;
+}
+
+
+a:hover {
+  color:thistle;
+}
+
+a:active {
+  color: blue;
+  background-color: blue;
+}
