@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+</head>
+<body>
+  <main class="container">
+    <div class="card" id="card1">
+      <p>Card 1</p>
+    </div>
+    <div class="card" id="card2">
+      <p>Card 2</p>
+    </div>
+    <div class="card" id="card3">
+      <p>Card 3</p>
+    </div>
+    <div class="card" id="card4">
+      <p>Card 4</p>
+    </div>
+    <div class="card" id="card5">
+      <p>Card 5</p>
+    </div>
+  </main>
+
+  <style>
+/* create flex boxes within flex boxes, centering each to create cards that scale */
+
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      display: flex;
+      width: 900px;
+      height: 300px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .card {
+      display: flex;
+      width: 300px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #card1 {
+      background: lightblue;
+    }
+
+    #card2 {
+      background: orange;
+    }
+
+    #card3 {
+      background: hotpink;
+    }
+
+    #card4 {
+      background: red;
+    }
+
+    #card5 {
+      background-color: turquoise;
+
+    }
+  </style>
+
+</body>
+</html>

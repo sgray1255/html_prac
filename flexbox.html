@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="outer">
+    <div class="card">
+      <p>Card 1</p>
+    </div>
+    <div class="card">
+      <p>Card 2</p>
+    </div>
+    <div class="card" id="small">
+      <p>Card 3</p>
+    </div>
+    <div class="card" id="large">
+      <p>Card 4</p>
+    </div>
+    <div class="card">
+      <p>Card 5</p>
+    </div>
+    <div class="card">
+      <p>Card 6</p>
+    </div>
+    <div class="card">
+      <p>Card 7</p>
+    </div>
+  </div>
+</body>
+
+<style>
+  .outer {
+    width: 1000px;
+    height: 300px;
+    border: 1px dotted black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+  }
+
+  #small {
+    height: 100px;
+  }
+
+  #large {
+    height: 100px;
+  }
+
+</style>
+</html>
