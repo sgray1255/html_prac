@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.btn--blue {
+  background-color: #777C8C;
+}
+.btn--red {
+  background-color: #996E6B;
+}
+.btn--yellow {
+  background-color: #88907A;
+}
+.btn:hover {
+  color: white;
+  cursor: pointer;
+}

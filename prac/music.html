@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Artists</title>
+</head>
+<body>
+  <div class="grid-container">
+      <p id="headerOne">My Favorite Artists</p>
+      <p id="headerTwo">My Favorite Book</p>
+    <section id="artistOne">
+      <div>
+        <h3>Bob Dylan</h3>
+        <dl>
+          <dt>Top picks:</dt>
+          <dd>A Hard Rain's Gonna Fall</dd>
+          <dd>Hurricane</dd>
+        </dl>
+      </div>  
+      <div class="img">
+        <img src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-bob-dylan-f1e9093b-a9b8-4924-9d32-325cece7c662.jpg?resize=1800,1200&w=1200" alt="" >
+      </div>
+    </section>
+
+    <section id="artistTwo">
+      <p>John Prine</p>
+      <div>
+        <img src= alt="" >
+      </div>
+    </section>
+
+    <section id="book">
+      <p>The Grapes of Wrath</p>
+      <div>
+        <img src= alt="" >
+      </div>
+    </section>
+
+    <section id="artistFour">
+      <p>Paul Simon</p>
+      <div>
+        <img src="https://www.rollingstone.com/wp-content/uploads/2018/09/youcancallmeal.jpg" alt="" >
+      </div>
+    </section>
+
+    <section id="artistFive">
+      <div>
+      <p>Leonard Cohen</p>
+        <img src= alt="" height=>
+      </div>
+    </section>
+
+    <section id="artistThree">
+      <p>Father John Misty</p>
+      <div>
+        <img src="https://media.newyorker.com/photos/5942b7a9beb38936ce3f29d6/master/w_2560%2Cc_limit/170626_r30169.jpg" alt="">
+      </div>
+    </section>
+
+  </div>
+</body>
+
+<style>
+
+  .grid-container {
+    height: 800px;
+    width: auto;
+    display: grid;
+    grid-template-rows: 75px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'headerOne headerOne headerOne headerTwo'
+    'artistOne artistTwo artistTwo book'
+    'artistThree artistTwo artistTwo book'
+    'artistThree artistFour artistFive book';
+    gap: 5px;
+  }
+
+  #headerOne {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    grid-area: headerOne;
+  }
+
+  #headerTwo {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    grid-area: headerTwo;
+  }
+
+  #artistOne {
+    display: flex;
+    grid-area: artistOne;
+    border: 1px solid black;
+
+  }
+
+  #artistTwo {
+    display: flex;
+    grid-area: artistTwo;
+    border: 1px solid black;
+  }
+
+  #artistThree {
+    grid-area: artistThree;
+    display: flex;
+    border: 1px solid black;
+  }
+
+  #artistFour {
+    grid-area: artistFour;
+    display: flex;
+    border: 1px solid black;
+  }
+
+  #artistFive {
+    grid-area: artistFive;
+    display: flex;
+    border: 1px solid black;
+  }
+
+  #book {
+    grid-area: book;
+    display: flex;
+    border: 1px solid black;
+
+  }
+  img {
+    height: 150px;
+    width: 150px;
+    display: flex;
+  }
+
+</style>
+
+</html>

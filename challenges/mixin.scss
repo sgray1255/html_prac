@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin button-hover ($button-hover, $cursor) {
+  &:hover {
+    color: $button-hover;
+    cursor: $cursor;
+  }
+}
+
+@mixin button {
+  border: 2px solid black; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+@mixin button-color($bluebutton, $redbutton, $yellowbutton) {
+  &--blue{
+    background-color: $bluebutton;
+  }
+
+  &--red{
+    background-color: $redbutton;
+  }
+  &--yellow{
+    background-color: $yellowbutton;
+  }
+}
+
+.btn {
+    @include button();
+    @include button-color(#777C8C, #996E6B, #88907A);
+    @include button-hover(white, pointer)
+  }

@@ -1,0 +1,123 @@
+/* Headers */
+
+.favmusic {
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  grid-area: favmusic;
+}
+
+.favbook {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: favbook;
+}
+
+/* Bob Dylan */
+
+.dylan {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-between;
+  padding: 10px;
+  grid-area: dylan;
+}
+
+.dylan img {
+  width: 200px;
+  height: 175px;
+}
+
+/* John Prine */
+
+.prine img {
+  width: 250px;
+  height: 200px;
+}
+
+.prine {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  padding: 10px;
+  grid-area: prine;
+}
+
+.prine-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Father John Misty */
+
+.fatherjohn img {
+  height: 200px;
+  width: 150px;
+}
+
+.fatherjohn {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  align-items: center;
+  grid-area: father-john;
+}
+
+/* Fleet Foxes */
+
+.fleet-foxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 10px;
+  grid-area: fleet-foxes;
+}
+
+/* The Grapes of Wrath */
+
+.book img {
+  width: 300px;
+  height: 400px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black; 
+  padding: 10px;
+  grid-area: book;
+}
+
+/* Tyler Childers */
+
+.childers img {
+  width: 250px;
+  height: 300px;
+}
+
+.childers {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  grid-area: childers;
+}
+
+/* Grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 60px 1fr 1fr 1fr 1fr ;
+  gap: 10px;
+  grid-template-areas: 
+  'favmusic favmusic favmusic favmusic favmusic favbook favbook'
+  'dylan dylan prine prine prine book book'
+  'father-john father-john prine prine prine book book'
+  'father-john father-john fleet-foxes childers childers book book'
+  'father-john father-john fleet-foxes childers childers book book'
+  ;
+}

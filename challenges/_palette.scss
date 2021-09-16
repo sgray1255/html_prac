@@ -1,0 +1,23 @@
+$primary-color: #95B594;
+$secondary-color:#E7BDD1;
+$tertiary-color: rgb(250,222,215);
+$text-color: #A48A8B;
+
+.nav {
+  background-color: $primary-color;
+  &__text {
+    color: $text-color;
+
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  &__middle {
+    background-color: $secondary-color;
+  }
+
+  &__bottom {
+    background-color: $tertiary-color;
+  }
+}
